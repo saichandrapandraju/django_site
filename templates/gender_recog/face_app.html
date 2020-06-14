@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+{% extends "gender_recog/index.html" %}
+  {% block body_block %}
+  <div class="face_app">
+    <form method="POST" , enctype="multipart/form-data">{% csrf_token %}
+      <h2>Please upload a face and JARVIS will figure out it's gender!</h2><br>
+      <p class="upload_center"><input type="file" class="choose_file" name="file_upload" /></p><br>
+      <p class="upload_center"><input type="submit" class="upload" name="predict" /></p>
+    </form>
+    {% if upload %}
+    <p class="upload_center"><h2>JARVIS: I think its a {{result}}</h2></p>
+    {% endif %}
+  </div>
+
+  {% endblock %}
