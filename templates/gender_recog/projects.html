@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+{% extends "gender_recog/nav.html" %} {% load static %} {% block body_block %}
+
+<div id="fullpage">
+  <!-- <section class="section s1">
+    <h1>MY PROJECTS</h1>
+  </section> -->
+  <section class="section s2">
+    <h1>Gender Recognition using face</h1>
+    <div class="description">
+      <p>
+        This CNN model(kinda) is trained to recognize gender(Male or Female)
+        using frontal face. There are a couple of variations. One is a pure CNN
+        and the other is an <em>'ensemble'</em> of first CNN and one fine-tuned
+        with image augmentation
+      </p>
+      <p>
+        <a href="{% url 'gender_recog:explain' %}">click here</a> to give it a
+        try
+      </p>
+    </div>
+    <img
+      src="{% static 'images/gender_recog/face.png'%}"
+      alt="face"
+      class="face"
+    />
+  </section>
+  <section class="section s3">
+    <h1>Project-RNN</h1>
+    <div class="description">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore iste
+        facere dignissimos temporibus laudantium facilis ipsum, maxime, quod
+        explicabo tempora consequatur, quasi dolorem fugit quibusdam sequi dolor
+        fugiat corporis inventore.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, dolor.
+      </p>
+    </div>
+  </section>
+  <section class="section s4">
+    <h1>Project-CUSTOM</h1>
+    <div class="description">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore iste
+        facere dignissimos temporibus laudantium facilis ipsum, maxime, quod
+        explicabo tempora consequatur, quasi dolorem fugit quibusdam sequi dolor
+        fugiat corporis inventore.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, dolor.
+      </p>
+    </div>
+  </section>
+</div>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"
+  integrity="sha256-fIkQKQryItPqpaWZbtwG25Jp2p5ujqo/NwJrfqAB+Qk="
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
+  integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U="
+  crossorigin="anonymous"
+></script>
+<script src="{% static 'fullpage.min.js' %}"></script>
+<script src="{% static 'projects.js' %}"></script>
+{% endblock %}

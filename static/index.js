@@ -25,6 +25,7 @@
 
 // navSlide();
 
+//Start JS for HOME Page
 const main = document.querySelector(".main");
 const slider = document.querySelector(".slider");
 const logo = document.querySelector(".logo");
@@ -53,3 +54,5 @@ tl.fromTo(main, 1, { height: "0%" }, { height: "80%", ease: Power2.easeinOut })
   .fromTo(navLinks, 0.5, { opacity: 0, x: 30 }, { opacity: 1, x: 0 }, "-=0.5")
   .fromTo(headline, 0.5, { opacity: 0, x: 30 }, { opacity: 1, x: 0 }, "-=0.3")
   .fromTo(suggestion, 3, { opacity: 0, x: 30 }, { opacity: 1, x: 0 }, "-=0.3");
+
+//END JS for HOME Page

@@ -10,6 +10,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Poppins"
     />
+    <link rel="stylesheet" href="{% static 'fullpage.min.css' %}" />
     <link rel="stylesheet" href="{% static 'css/gender_recog/styles.css' %}" />
     <title>Saichandra Pandraju</title>
   </head>
@@ -28,13 +29,11 @@
             <a href="#">About</a>
           </li>
           <li>
-            <a href="{% url 'gender_recog:gen_recog' %}">Projects</a>
+            <a href="{% url 'projects' %}">Projects</a>
           </li>
         </ul>
       </nav>
     </header>
-    {% block body_block %}
-
-    {% endblock %}
+    {% block body_block %} {% endblock %}
   </body>
 </html>

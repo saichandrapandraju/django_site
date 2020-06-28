@@ -7,6 +7,9 @@ import os
 def index(request):
     return render(request,'gender_recog/index.html')
 
+def projects(request):
+    return render(request,'gender_recog/projects.html')
+
 def gen_recog(request):
     # gen_form = forms.Gen_Rec_Form()
     if request.method == 'POST':

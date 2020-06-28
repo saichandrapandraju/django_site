@@ -28,11 +28,11 @@
             <a href="#">About</a>
           </li>
           <li>
-            <a href="{% url 'gender_recog:gen_recog' %}">Projects</a>
+            <a href="{% url 'projects' %}">Projects</a>
           </li>
         </ul>
       </nav>
-      <section>
+      <section class="index">
         <div class="main">
           <img
             src="{% static 'images/gender_recog/sky-space.jpg'%}"
@@ -58,6 +58,6 @@
       integrity="sha256-v/YsEqWkVsiNHryCWg+vjC/eDBakMAgOsCJRa0kNPOg="
       crossorigin="anonymous"
     ></script>
-    <script src="{% static 'site.js' %}"></script>
+    <script src="{% static 'index.js' %}"></script>
   </body>
 </html>

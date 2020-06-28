@@ -19,7 +19,8 @@ from gender_recog import views
 
 urlpatterns = [
     path('', views.index, name='index'),
-    path('gender_recog/', include('gender_recog.urls')),
+    path('projects/', views.projects, name='projects'),
+    path('projects/gender_recog/', include('gender_recog.urls')),
     path('admin/', admin.site.urls)
 
 ]
