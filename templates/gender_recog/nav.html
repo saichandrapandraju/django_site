@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="icon" href="{% static 'images/gender_recog/favicon-cir.png'%}" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Poppins"
+    />
+    <link rel="stylesheet" href="{% static 'css/gender_recog/styles.css' %}" />
+    <title>Saichandra Pandraju</title>
+  </head>
+
+  <body class="body-inherit">
+    <header>
+      <nav class="nav-inherit">
+        <div class="logo-inherit">
+          <a href="{% url 'index' %}"><h4>SAI</h4></a>
+        </div>
+        <ul class="nav-links-inherit">
+          <li>
+            <a href="{% url 'index' %}">Home</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a href="{% url 'gender_recog:gen_recog' %}">Projects</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    {% block body_block %}
+
+    {% endblock %}
+  </body>
+</html>

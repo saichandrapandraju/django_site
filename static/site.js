@@ -29,6 +29,7 @@ const main = document.querySelector(".main");
 const slider = document.querySelector(".slider");
 const logo = document.querySelector(".logo");
 const headline = document.querySelector(".headline");
+const suggestion = document.querySelector(".suggestion");
 const navLinks = document.querySelectorAll(".nav-links li");
 const nav = document.querySelector(".nav-links");
 
@@ -50,4 +51,5 @@ tl.fromTo(main, 1, { height: "0%" }, { height: "80%", ease: Power2.easeinOut })
   .fromTo(logo, 0.5, { opacity: 0, x: 30 }, { opacity: 1, x: 0 }, "-=0.5")
   .fromTo(nav, 0.5, { opacity: 0, x: 30 }, { opacity: 1, x: 0 }, "-=0.5")
   .fromTo(navLinks, 0.5, { opacity: 0, x: 30 }, { opacity: 1, x: 0 }, "-=0.5")
-  .fromTo(headline, 0.5, { opacity: 0, x: 30 }, { opacity: 1, x: 0 }, "-=0.3");
+  .fromTo(headline, 0.5, { opacity: 0, x: 30 }, { opacity: 1, x: 0 }, "-=0.3")
+  .fromTo(suggestion, 3, { opacity: 0, x: 30 }, { opacity: 1, x: 0 }, "-=0.3");
