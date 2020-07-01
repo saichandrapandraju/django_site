@@ -24,6 +24,7 @@
   padding-top: 2vh;
   min-height: 8vh;
   background: linear-gradient(to left, #ba7453, #d1a984);
+  /* background: red; */
   font-family: "Poppins", sans-serif;
 }
 .nav-links {
@@ -178,33 +179,38 @@
   cursor: pointer;
 }
 .face {
-  height: 50%;
+  height: 45%;
   position: absolute;
-  top: 60%;
+  top: 55%;
   left: 80%;
   transform: translate(-80%, -60%);
 }
 
-/* .s1 h1, */
+.s1 h1,
 .s2 h1,
 .s3 h1,
 .s4 h1 {
-  font-size: 45px;
+  font-size: 40px;
   position: absolute;
   top: 10%;
   left: 50%;
   transform: translate(-50%, -10%);
-  background: linear-gradient(to left, #eee5bd, #fbfcfc);
+  background: linear-gradient(to left, #eee5bd, #f5f0d8);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .description {
-  margin: 20%;
+  /* margin: 20%; */
   width: 60%;
   margin-left: 5%;
   font-size: 20px;
 }
+.s1 .description {
+  /* margin: 20%; */
+  width: 90%;
+  margin-left: 5%;
+  font-size: 20px;
+}
 .description p {
-  margin-top: 25px;
   margin-bottom: 25px;
 }
